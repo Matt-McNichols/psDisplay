@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load staticfiles %}
+        <title>dispPoc</title>
+    </head>
+    <body>
+            <table border = "1" style="width:100%">
+              <tr>
+                <td style="width:50%"><input type="submit" name="compile" value="compile" form="textIn"></td>
+                <td><img src="{% static "dispPoc/cwo_960_720.png" %}" alt="My image"/ style="float: right" width="100px" height="100px"></td>
+              </tr>
+            </table>
+            <div style="width:100%">
+              <div style="float: left; width:50%">
+                  {% block headerText %}
+                  <table border = "1" style="width:100%">
+
+                  <form id="textIn" method="post" action="/dispPoc/">
+                      {% csrf_token %}
+                      {% for field in form.visible_fields %}
+                      <tr>
+                        <td>
+                        <h3>{{ field.help_text }}</h3>
+                        {{ field }}
+                        {{ field.errors }}
+                        </td>
+                      </tr>
+                      {% endfor %}
+                  </form>
+
+                    </table>
+
+                  {% endblock %}
+          </div>
+          <div style="float: right;width:50%">
+                  <table border = "1" style="width:100%;height:800px">
+                    <tr><td>
+              <embed src="{% static "dispPoc/fOut.pdf" %}" alt="My output pdf"/ width=100% height=100% >
+              </tr></td>
+              </table>
+          </div>
+        </div>
+    </body>
+
+</html>
