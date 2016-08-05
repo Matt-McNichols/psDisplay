@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
+{% load staticfiles %}
     <head>
-        {% load staticfiles %}
+      <link rel="stylesheet" href="{% static 'dispPoc/style.css' %}">
         <title>dispPoc</title>
     </head>
     <body>
-            <table border = "1" style="width:100%">
+            <table class="action" border = "1" >
               <tr>
-                <td style="width:50%"><input type="submit" name="compile" value="compile" form="textIn"></td>
-                <td><img src="{% static "dispPoc/cwo_960_720.png" %}" alt="My image"/ style="float: right" width="100px" height="100px"></td>
+                <td width=50% ><button type="submit"  name="compile" value="compile"  class="compile" form="textIn" >Compile</button></td>
+                <td ><img src="{% static "dispPoc/cwo_960_720.png" %}" alt="My image"/ style="float: right" width="100px" height="100px"></td>
               </tr>
             </table>
             <div style="width:100%">
               <div style="float: left; width:50%">
                   {% block headerText %}
-                  <table border = "1" style="width:100%">
+                  <table border = "1" class="inputForms">
 
                   <form id="textIn" method="post" action="/dispPoc/">
                       {% csrf_token %}
                       {% for field in form.visible_fields %}
-                      <tr>
+                      <tr height="700px">
                         <td>
-                        <h3>{{ field.help_text }}</h3>
+                          <center><h2>{{ field.help_text }}</h2></center>
                         {{ field }}
                         {{ field.errors }}
                         </td>
@@ -33,8 +34,8 @@
 
                   {% endblock %}
           </div>
-          <div style="float: right;width:50%">
-                  <table border = "1" style="width:100%;height:800px">
+          <div style="float: right;width:50%;">
+                  <table border = "1" style="width:100%;height:650px;">
                     <tr><td>
               <embed src="{% static "dispPoc/fOut.pdf" %}" alt="My output pdf"/ width=100% height=100% >
               </tr></td>

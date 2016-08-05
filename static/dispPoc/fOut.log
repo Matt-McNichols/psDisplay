@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.5.31)  11 JUL 2016 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.5.31)  29 JUL 2016 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,57 +484,61 @@ l.45 \chapter
 
 ]
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 76.
- (/home/matt/test.py
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 3.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+nput line 81.
+ (/home/matt/test.py)
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
 (/home/matt/test.py)
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 (/home/matt/numberTwo.py [2
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (./fOut.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `fOut.out' has not changed.
 (rerunfilecheck)             Checksum: C45131CEBAE33C5E4942F3FB224CF893;219.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 9698 strings out of 495025
- 144557 string characters out of 6181515
- 312783 words of memory out of 5000000
- 12763 multiletter control sequences out of 15000+600000
+ 9697 strings out of 495025
+ 144547 string characters out of 6181515
+ 301777 words of memory out of 5000000
+ 12762 multiletter control sequences out of 15000+600000
  10394 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,6n,47p,264b,1711s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,47p,264b,1709s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -543,7 +547,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt9.pfb>
-Output written on fOut.pdf (4 pages, 94816 bytes).
+Output written on fOut.pdf (4 pages, 95067 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
